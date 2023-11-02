@@ -36,7 +36,7 @@ export const addContact = async ({ name, email, phone }) => {
 
 export const removeContact = async (contactId) => {
   const contacts = await listContacts();
-  const index = movies.findIndex((item) => item.id === contactId);
+  const index = contacts.findIndex((item) => item.id === contactId);
 
   if (index === -1) {
     return null;
